@@ -1,0 +1,6 @@
+<div style="border:2px solid black">
+    <h2 class="text-center"><b>Parent Component</b></h2>
+    <!-- string interpolation -->
+    <h4 class="text-center">{{detailsElement}}</h4>
+    <app-details-child (sendEvent)="receievedEvent($event)" [sashiInputProperty]="detailsElement"></app-details-child>
+</div>

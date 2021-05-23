@@ -1,0 +1,28 @@
+<h2><b>All Users</b></h2>
+<!-- Search form -->
+<input class="form-control" [(ngModel)]="searchVariable" type="text" placeholder="Search" aria-label="Search">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of allUsers | FilterName:searchVariable">
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+<div class="grid-stack">
+  <div class="grid-stack-item" style="border:2px solid green" data-gs-x="0" data-gs-y="0" data-gs-width="4" data-gs-height="2">
+    <div class="grid-stack-item-content"></div>
+  </div>
+  <div class="grid-stack-item" style="border:2px solid green" data-gs-x="4" data-gs-y="0" data-gs-width="4" data-gs-height="4">
+    <div class="grid-stack-item-content"></div>
+  </div>
+</div>

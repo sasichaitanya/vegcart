@@ -1,0 +1,8 @@
+<table style="width:100%">
+  <tr>
+    <th *ngFor="let head of headings">{{head}}</th>
+  </tr>
+  <tr *ngFor="let row of tableData">
+    <td *ngFor="let head of headings">{{row[head]}}</td>
+  </tr>
+</table>
